@@ -1,0 +1,506 @@
+﻿.supermain {
+    position: relative;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* МЕНЮ*/
+
+.menu {
+    text-transform: uppercase;
+    font-family:'Open Sans Condensed', sans-serif;
+    border-radius: 3px;
+    overflow: hidden;
+    width: 100%;
+    height: 60px;
+/*    border: 1px solid*/
+}
+
+.contentmenu{
+    width: 900px;
+    margin: auto;
+       
+}
+
+.contentmenu ul{
+    float: right;
+    color: #c8c8c8;
+}
+
+.menu li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+.menu ul {
+    display: inline-block;
+}
+
+.menu li:hover {
+    border-bottom:#3070a8 solid 2px;
+    cursor: pointer;
+    color: #3070a8;
+}
+
+.menu span {
+    display: inline-block;
+    color: #3070a8;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px 0;
+    
+}
+.titlespan span {
+    color: orange;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/*Menu over*/
+
+
+/*after menu1*/
+
+.back1 {
+    background: url('123.png');
+    background-size: 100% 100%;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 600px;
+    text-transform: none;
+    font-family:'Open Sans Condensed', sans-serif;
+}
+
+.contentback1 {
+    width: 900px;
+    margin: auto;
+    padding: 11% 0;
+}
+
+.back1 h2 {
+    
+    font-weight: 300;
+   margin: 0;
+    font-size: 35px;
+    
+}
+.inwhat {
+   margin: 0;
+    font-weight: bold;
+    font-size: 56px;
+    text-transform: uppercase;
+    
+}
+div.butt {
+    width: 150px;
+    border: 1px solid white;
+    padding: 10px 20px;
+    margin: 0px auto;
+    position: relative;
+    text-transform: uppercase; 
+}
+
+.loremtext {
+    margin: 15px 0 20px 0;
+}
+
+/*Value block*/
+
+.title {position: relative;
+height: 500px;
+    margin: 70px 0;
+}
+.main,.mainl,.mainr {
+    background-color: #ee8129;
+    width: 250px;
+    position: absolute;
+    box-shadow: -2px 0px 15px 0px rgba(37,194,222,1);
+    border-radius: 5px;
+    top: 100px;
+    height: 370px;
+    white-space:nowrap;
+    
+}
+
+.main {   
+    left: 40%;
+    z-index: 1;
+    height: 400px;
+    top:90px;
+    
+}
+
+.mainl {
+    background-color: #37c2d3;
+    box-shadow: none;
+    left :22%;
+    z-index: 0;
+}
+.mainr {
+    background-color: #1cb79a;   
+    box-shadow: none;
+    left :58%;
+    z-index: 0;
+}
+
+
+div.main h2,div.mainl h2, div.mainr h2 { 
+    margin: 18px 50px ;
+    color: white;
+    width: 150px;
+}
+.mh2 {color: black;
+width: 720px;
+margin: 18px auto ;}
+
+.main h2 {
+    margin: 22px auto ;
+}
+.ins ul {
+    padding:0px;
+}
+.ins {
+    margin-left: 1px;
+    background: white;
+    height: 306px;
+    width: 248px;
+    border-radius: 5px;
+    
+}
+
+.first {
+    margin-left: 0;
+    border: 3px #ee8129 solid ;
+    width: 244px;
+    height: 324px;
+}
+    
+
+.ins ul li {list-style:none;
+    margin: 1px 20px;
+    padding: 0px 2px;
+    border-radius: 3px;
+    color: #968c8c;
+}
+.ins ul li:before { 
+   content: url(1.png); 
+    
+}
+.ins ul li:nth-child(even){
+    background:#edf5fd; 
+}
+
+.ins ul li:nth-child(odd){
+    background:#c6def7; 
+}
+
+p { margin: 10px 30px;
+    font-size: 20px;
+        display: inline-block;
+}
+.shr25 {font-size: 70px;
+    margin: 0;
+    }
+.but {
+    width: 130px;
+    padding: 10px 20px;
+    margin: 0px auto;
+    border: 2px solid #3371a6 ;
+    border-bottom: solid 2px #392a10;
+    background-color: #3371a6;
+    border-radius: 4px;
+    color: white;
+    
+}
+.fir {
+    border: 2px solid #ee8129 ;
+    border-bottom: solid 2px #392a10;
+    background-color: #ee8129;
+}
+.but:hover{
+    border-bottom: solid 2px #3371a6;
+    cursor: pointer;
+}
+.fir:hover{
+    border-bottom: solid 2px #ee8129;
+}
+
+.su {display: inline;
+    vertical-align: top;
+    margin-right: 0}
+.subb { display: inline;
+    margin-left: 0;
+    padding: 0;
+        vertical-align:bottom;
+}
+.date {
+    width: 200px;
+    margin: 0  auto;
+}
+
+/*Reviews*/
+
+.bas {
+    background: url(task2.jpg);
+    width: 100%;
+    background-size: 100% 100%;
+    height:350px ;   
+    margin: 0;
+    min-width: 1300px;
+    
+
+}
+.bas h2 { 
+    position: absolute;
+    width: 410px;
+    margin: 30px 37%;
+    color: #2a2aef;
+    font-size: 40px;
+    font-weight: bold;
+    white-space:nowrap;
+}
+.spanchik {
+    color: orange;
+    font-weight: 500;
+}
+img {width: 100px; height: 100px}
+
+.Mleft,.Mright {
+    overflow: hidden;
+    width: 550px;
+    display: inline-block;
+    margin: 150px 0px 0px 60px ;
+    left: 100px;
+    vertical-align: top;
+   
+}
+
+.Mright {
+    margin: 150px 0px 0px 30px;
+    
+}
+.Mleft {
+    margin-left: 120px;
+}
+
+.text {float: right;
+width: 300px;
+background:white;
+    overflow: hidden;
+    min-height: 100px;
+    border-radius: 5px;
+    margin-right: 115px;
+    font-size: 20px;
+}
+.Mleft .text {
+    margin-right: 0px;
+}
+.Mleft .pic {
+    margin-left: 115px;
+}
+
+.caption {border-bottom: 1px  dashed black;
+    width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin:0 0 20px 0px;
+    padding: 6px 0px 3px 0px;
+    color: #1277c1;
+    text-align: justify;
+    }
+.caption:before {content: "-";
+margin: 0px 5px;
+}
+
+.pic {float: left;
+    position: absolute;
+    z-index: 1;
+    
+    }
+.caption span {float: right;
+    padding: 0px 3px;
+    font-size: 17px;}
+
+.sq {
+    float: right;
+width: 0;
+height: 0;
+border: 25px solid white;
+border-color: transparent white transparent transparent;
+margin: 35px 0px;
+position: relative;
+z-index: 0;}
+
+/*Advantages*/
+
+.advantages:not(.pic2 p) {
+    position: relative;
+    text-transform: uppercase;
+    font-family:'Open Sans Condensed', sans-serif;
+} 
+
+.advantages h2 {
+    text-transform: uppercase;
+    width: 900px;
+    margin: 70px auto;
+    font-size: 23px;
+}
+.advcontent {
+    width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+    
+    
+}
+
+.pic2 {
+    display: inline-block;
+    width: 290px;
+    vertical-align: top;
+    
+}
+.pic2 p {
+    text-align: justify;
+    color: #999999;
+}
+.pic2 .minh2 {
+    font-size: 30px;
+    color: #3070a8;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
+/*Girl and man*/
+
+.girloman {
+    background: url(%D0%9C%D1%83%D0%B6%D0%B8%D0%BA_%D0%B8_%D1%82%D0%B5%D1%82%D0%BA%D0%B0.png);
+    background-size: 100% 100%;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.contgirloman {
+    width: 900px;
+    margin: 0px auto;
+}
+.contgirloman p  {
+    color: #ffffff;
+   
+    
+}
+
+
+.girloman .h2 {
+    width: 600px;
+    color: #ee8129;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size:26px;
+    margin-top: 12%;
+
+    
+}
+.girloman ul {
+    color: #9d9d9d;
+    width: 600px;
+}
+
+.girloman li:nth-child(even) {
+    color: #3070a8;
+}
+
+.girloman li {
+    padding: 10px;
+}
+
+/* almost Last block*/
+
+.backgrallast {
+    overflow: hidden;      
+    min-width: 1300px;
+    
+}
+.backgrallast li {
+    list-style: none;
+    padding: 4px; 
+}
+
+.backgrallast li:nth-child(n+2):nth-child(-n+4)::before {
+    content:"";
+    width: 0;
+    height: 0;
+    border: 5px solid;
+    border-color: transparent;
+    margin-right: 30px;
+}
+
+
+.backgrallast li:nth-child(1):before{content: url(location.png);
+    
+}
+.backgrallast li:before{
+    margin-right: 20px;
+}
+
+.backgrallast .fifthli:before{content: url(In.png);
+    
+}
+
+.backgrallast .sixthli:before{content: url(message.png);
+    margin-right: 16px;
+    
+}
+.logo img {
+    width: 48px;
+    height: 48px;
+}
+
+.leftlog {
+    float: left;
+    text-align: center;
+    margin-left: 17%;
+}
+.map {
+   float: right;
+    width: 704px;
+
+}
+.map img {
+    width: 100%;
+    height: 345px;
+    margin: 0;
+    
+}
+
+.backgrallast ul {
+    text-align:left;
+}
+
+/*Copyright*/
+
+.Copyright {
+    background-color: #3070a8;
+    width: 100%;
+    height: 80px;
+    color: white;
+    text-align: center;
+    margin: -2px 0;
+}
+.Copyright span {
+    font-weight: bold;
+}
+
+.Copyright em {
+    font-style: normal;
+    color: black;
+    font-weight: 600;
+}
+
+
