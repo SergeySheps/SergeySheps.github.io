@@ -197,7 +197,7 @@ nav{
         height: 150px;
     }
     .afterloading_item1{
-    font-size: 13px;
+    font-size: 16px;
         flex-grow: 4;
 }
 
@@ -209,7 +209,7 @@ nav{
 }
     .footer p{
     
-    font-size: 16px;
+    font-size: 18px;
 
 }
     
@@ -247,7 +247,7 @@ nav{
         height: 75px;
     }
     .afterloading_item1{
-    font-size: 6.5px;
+    font-size: 8px;
         flex-grow: 4;
 }
 
@@ -259,12 +259,12 @@ nav{
 }
     .footer p{
     
-    font-size: 9px;
+    font-size: 11px;
 
 }
     .footer h2{
 
-    font-size: 12px;
+    font-size: 13px;
  
 }
     
