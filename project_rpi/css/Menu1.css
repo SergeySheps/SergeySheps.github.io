@@ -103,7 +103,7 @@ nav{
     background-color: #bc3183;
     font-size: 30px;
     color: #ffffff;
-    flex: 1.1 1;
+    flex: 1.1 4;
     display: flex;
     justify-content: center;
     align-items:center;
@@ -231,6 +231,9 @@ nav{
         .afterloading_item1{
     font-size: 13px;
 }
+    .loading a{
+        font-size: 19px;
+    }
     
 }
 
