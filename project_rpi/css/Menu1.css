@@ -30,6 +30,7 @@ nav{
 }
 .headerMenuList li{
     padding: 19px 15px;
+    font-size: 16px;
     
 }
 .headerMenuList li:nth-child(1){
@@ -46,7 +47,6 @@ nav{
     flex-flow: row wrap;
     align-items: center;
     height: 500px;
-    
 }
 .loading h1,.loading h2{
     color: #ffffff;
@@ -55,7 +55,7 @@ nav{
     padding: 0px;
     font-size: 60px;
     font-weight: 500;
-    min-width: 730px;
+    
 }
 
 .loading a{
@@ -118,9 +118,6 @@ nav{
     display:block;
     flex: 1 1 340px;
 }
-.images {
-/*    height: 100%;*/
-}
 
 .footer {
     background-color: #ebebeb;
@@ -144,6 +141,18 @@ nav{
     flex-flow: row wrap;   
 }
 
+@media only screen and (max-width: 780px), only screen and (max-device-width: 780px){
+    .loading h1,.loading h2{
+        font-size: 49px;
+    }
+    
+    .headerMenuList li{
+    font-size: 14px;
+    
+}
+    
+}
+
 @media only screen and (max-width: 640px), only screen and (max-device-width: 640px){
     .headerMenuList {
         display: none;   
@@ -157,6 +166,7 @@ nav{
     }
     .logo{
         margin-left: 18px;
+        color: #ebebeb;
     }
     .miniMenu{
         padding: 27px;
@@ -182,7 +192,6 @@ nav{
     }
     .loading h1,.loading h2{
         font-size: 37px;
-        min-width: 450px;
     }
     .loading{
         height: 350px;
@@ -197,13 +206,13 @@ nav{
         height: 150px;
     }
     .afterloading_item1{
-    font-size: 16px;
+    font-size: 19px;
         flex-grow: 4;
 }
 
 .afterloading_item2{
 
-    font-size: 30px;
+    font-size: 32px;
     flex-grow: 1;
    
 }
@@ -215,6 +224,15 @@ nav{
     
 }
 
+@media only screen and (max-width: 490px), only screen and (max-device-width: 490px){
+    .loading h1,.loading h2{
+        font-size: 25px;
+    }
+        .afterloading_item1{
+    font-size: 13px;
+}
+    
+}
 
 @media only screen and (max-width: 320px), only screen and (max-device-width: 320px){
     .logo{
