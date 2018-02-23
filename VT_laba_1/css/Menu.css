@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+nav {
+    display: none;
+}
+.headerMenuList {
+    margin: 0;
+    padding: 0;
+    font-family: 'Economica';
+    font-weight: 400;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+       
+}
+.hoverable_menu_button a{  
+    text-decoration: none;
+    color: white;
+}
+.hoverable_menu_button a:hover{
+    color: black;
+}
+
+.headerMenuList li{
+    padding: 10px 20px;
+    font-size: 22px;
+    color: white; 
+    text-align: center;
+    list-style: none;
+    
+}
+
+
+.headerMenuBlock {
+    background-color: black;  
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+.hoverable_menu_button:hover{
+    cursor: pointer;
+    background-color: darkgray;
+    color: black;
+}
+.search_panel{
+    display: flex;
+    margin-left: 5%;
+
+}
+.search_img{
+    display: flex;
+    align-items: center;
+
+}
+
+.search_img:hover{
+    cursor: pointer;
+}
+.logo_img {
+    display: block;
+}
+
+.leftNavigation{
+    display: flex;
+    flex-flow: row nowrap;
+    flex: 1 1 300px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.leftNavigation__right, .rightNavigation__right{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    flex: 1 1 90px;
+}
+.rightNavigation{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    flex: 1 1 500px;
+    justify-content: space-between;
+}
+

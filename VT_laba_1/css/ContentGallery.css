@@ -1,0 +1,80 @@
+.backgroundGallery{
+    background-color: #1a1919;
+    padding: 20px 0; 
+}
+.backgroundGallery h1 {
+    color: white;
+    margin: 10px auto;
+    width: 250px;
+}
+.gallery {
+    max-width: 1200px;
+    position: relative;
+    margin: 0px auto;
+    display: flex;
+    flex-flow: row wrap; 
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    
+}
+.gallery img {
+    width: 360px;
+    height: 260px;
+    margin: 15px;
+    z-index: 1;
+    border-radius: 4px;
+}
+.image__gallery {
+    
+    position: relative;
+    z-index: 1;
+}
+.paranja{
+    z-index: -1;
+}
+.image__gallery img:hover + .paranja{
+    z-index: 1;
+}
+.paranja:hover {
+   z-index: 1;  
+}
+
+.paranja {
+    opacity: 0.8;
+    background-color: gray;
+    width: 360px;
+    height: 260px;
+    position: absolute;
+    border-radius: 4px;
+    left: 15px;
+    top:15px;
+}
+.addBlock__paranja{
+    position: relative;
+    text-align: center;
+    top: 40%;
+    
+}
+.miniPic_paranja{
+    display: inline-block;  
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.miniPic_paranja:hover{
+    background-color: brown;
+    cursor: pointer;
+}
+.paranja img {
+   width: 20px;
+   height: 20px;
+    margin: 10px;
+    display: block;    
+}
+.titlePicture {
+    font-size: 21px;
+    font-weight: 600;
+    position: absolute;
+    left: 4%;
+}

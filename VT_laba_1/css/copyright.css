@@ -1,0 +1,17 @@
+.copyright{
+    width: 100%;
+    background-color: black;
+    height: 45px;
+    
+}
+
+.copyright__content{
+    color: white;
+    text-align: center;
+    margin: auto;
+    font-size: 22px;
+}
+
+.copyright__content span{
+    color: orange;
+}
