@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" type="image/x-icon" href="Images/title_logo.jpg">
+
+    <title>Memory game</title>
+</head>
+
+<body>
+    <header>
+        <div class="leftSideHeader">
+            <div class="faceCards">
+                <span class="chooseFaceText"> Выберите шапку
+                    <span class="closedArrow">&#9660;</span>
+                    <span class="openedArrow">&#9650;</span>
+                </span>
+                <div class="choose_face">
+
+                    <label>
+                        <input type="radio" name="frontCards" value="Images/dota2/front.jpg" checked>
+                        <img src="Images/dota2/front_mini.jpg" alt="^_^" width="40px" height="50px"> Dota2
+                    </label>
+
+                    <label>
+                        <input type="radio" name="frontCards" value="Images/Models/front.jpg">
+                        <img src="Images/Models/front_mini.jpg" alt="^_^" width="40px" height="50px"> Модели
+                    </label>
+
+                    <label>
+                        <input type="radio" name="frontCards" value="Images/Birds/front.jpg">
+                        <img src="Images/Birds/front_mini.jpg" alt="^_^" width="40px" height="50px"> Птицы
+
+                </div>
+            </div>
+            <div class="complexity"> Выберите сложность :
+                <select>
+                    <option value="10">10 карт </option>
+                    <option value="20">20 карт </option>
+                    <option value="40">40 карт </option>
+                </select>
+            </div>
+        </div>
+        <div class="curTime">
+            <pre>Время <span class="watch">00:00:00</span></pre>
+            
+        </div>
+        <div class="rightSideHeader">
+            <div>
+                <a href="https://en.wikipedia.org/wiki/Concentration_(game)" target="_blank">Правила игры</a>
+            </div>
+            <div class="statistics">
+                Рекорды
+            </div>
+            <div class="containerTable">
+                <button class="remove-button" title="Закрыть">x</button>
+                <table>
+                    <caption>Таблица рекордов</caption>
+                    <thead>
+                        <tr>
+                            <th>Сложность</th>
+                            <th>Лучший результат</th>
+                            <th>Имя</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbodyTableRecords">
+                        <tr>
+                            <td>10 карт</td>
+                            <td>Нет</td>
+                            <td>Нет</td>
+                        </tr>
+                        <tr>
+                            <td>20 карт</td>
+                            <td>Нет</td>
+                            <td>Нет</td>
+                        </tr>
+                        <tr>
+                            <td>40 карт</td>
+                            <td>Нет</td>
+                            <td>Нет</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <div class="startGame">Начать</div>
+        <div class="restartGame">Начать заново</div>
+        <div class="main_content">
+
+        </div>
+    </main>
+    <script src="scripts/drowing.js"></script>
+    <script src="scripts/logicPart.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+.startGame,.restartGame{
+    border-radius: 4px;
+    padding: 10px;
+    background: linear-gradient(to bottom, rgba(240,87,31,1) 0%, rgba(240,87,31,1) 100%);
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    max-height: 22px;
+    margin: 40px;
+}
+.contentCard{
+    left:0;
+    top: 0;
+    position: absolute;
+    transform: rotateY(180deg);   
+}
+.stylesCard{
+    height: 200px;
+    width: 150px;
+    border-radius: 10px;
+}
+.contentCard, .containerCard {
+    backface-visibility: hidden;
+}
+.containerCard{
+    cursor: pointer;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    margin: 20px;
+}
+main{
+    display: flex;
+    perspective: 1000px;
+    flex-flow: column wrap;
+    align-items: center;
+    /* justify-content: center; */
+    height: 100%;
+    background: linear-gradient(45deg,rgba(243,226,199,1) 0%,
+     rgba(193,158,103,1) 0%, rgba(182,141,76,1) 100%);
+}
+.main_content{
+    display: flex;
+    perspective: 1000px;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.restartGame{
+    display: none;
+}
