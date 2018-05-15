@@ -162,13 +162,12 @@ function doingAfterCompare() {
             }
         }
         else {
-            let arrForSimultaneouslyRotate = [];
-            arrayOfOpeningCards.forEach(el => {
-                let func = () => {
-                    setTimeout(() => { el.card.style.transform = "rotateY(0deg)" }, 800)
+            let arrForSimultaneouslyRotate = arrayOfOpeningCards.map((el)=>{
+                return () => {
+                    setTimeout(() => { el.card.style.transform = "rotateY(0deg)" }, 450)
                 }
-                arrForSimultaneouslyRotate.push(func);
             })
+
             arrForSimultaneouslyRotate.forEach(el => el());
         }
         arrayOfOpeningCards.length = 0;
