@@ -1,9 +1,12 @@
 const startGameBut = document.body.querySelector(".startGame");
-const restartGameBut = document.body.querySelector(".restartGame");
+const restartGame = document.body.querySelectorAll(".restartGame");
+const restartGameBut = restartGame[0];
+const closeGameBut = restartGame[1];
 const mainSector = document.body.querySelector(".main_content");
 const curTime = document.body.querySelector(".watch");
 startGameBut.addEventListener("click", GameStartHandler);
 restartGameBut.addEventListener("click", Redirect);
+closeGameBut.addEventListener("click", Redirect);
 
 function ChosenNumFrontCard(img) {
     let rad = [...document.getElementsByName('frontCards')];
@@ -81,6 +84,7 @@ function Redirect(){
     location.reload();
 }
 function GameStartHandler() {
+    closeGameBut.style.display = "block";
     StartGameTimeClosure = StartGameTime();
     StartGameTimeClosure(true);
     startGameBut.style.display = "none";
@@ -158,6 +162,7 @@ function doingAfterCompare() {
                     }
                 }
                 restartGameBut.style.display = "block";
+                closeGameBut.style.display = "none";
  
             }
         }

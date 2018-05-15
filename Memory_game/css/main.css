@@ -34,10 +34,13 @@ main{
     perspective: 1000px;
     flex-flow: column wrap;
     align-items: center;
-    /* justify-content: center; */
     height: 100%;
     background: linear-gradient(45deg,rgba(243,226,199,1) 0%,
      rgba(193,158,103,1) 0%, rgba(182,141,76,1) 100%);
+}
+footer{
+    display: flex;
+    justify-content: center;
 }
 .main_content{
     display: flex;
