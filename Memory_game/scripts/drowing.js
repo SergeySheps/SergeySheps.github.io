@@ -7,6 +7,8 @@ const statistics = document.body.querySelector(".statistics");
 const containerTable = document.body.querySelector(".containerTable");
 const labels = [...document.body.querySelectorAll("label")];
 
+
+
 const closeBut = document.querySelector(".remove-button");
 const closeBlock = document.querySelector(".containerTable");
 closeBut.addEventListener("click", () => handlerClose(closeBlock));
