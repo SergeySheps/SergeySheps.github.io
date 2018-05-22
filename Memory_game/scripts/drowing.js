@@ -18,12 +18,12 @@ function handlerClose(elem) {
 containerTable.style.display = "none";
 openedArrow.style.display = "none";
 choose_face.style.display = "none";
-faceCards.addEventListener("mousedown", ShowFaceCards);
-statistics.addEventListener("click", ShowRecordsTable);
+faceCards.addEventListener("mousedown", showFaceCards);
+statistics.addEventListener("click", showRecordsTable);
 labels.forEach(el => {
-    el.addEventListener("change", ShowFaceCards);
+    el.addEventListener("change", showFaceCards);
 });
-function SetTableValues(tds, record) {
+function setTableValues(tds, record) {
     const valueEasy = localStorage.getItem(record);
     if (valueEasy) {
         let valueEasyObj = JSON.parse(valueEasy);
@@ -32,19 +32,19 @@ function SetTableValues(tds, record) {
         tds[2].textContent = valueEasyObj.name;
     }
 }
-function ShowRecordsTable() {
+function showRecordsTable() {
     const tbodyTableRecords = document.body.querySelector(".tbodyTableRecords");
     const linesTable = [...tbodyTableRecords.querySelectorAll("tr")];
     const tds1 = [...linesTable[0].querySelectorAll("td")];
     const tds2 = [...linesTable[1].querySelectorAll("td")];
     const tds3 = [...linesTable[2].querySelectorAll("td")];
-    SetTableValues(tds1, 'recordEasy');
-    SetTableValues(tds2, 'recordMedium');
-    SetTableValues(tds3, 'recordHard');
+    setTableValues(tds1, 'recordEasy');
+    setTableValues(tds2, 'recordMedium');
+    setTableValues(tds3, 'recordHard');
     containerTable.style.display = "block";
 
 }
-function ShowFaceCards(e) {
+function showFaceCards(e) {
     if (choose_face.style.display === "none") {
         choose_face.style.display = "block";
         openedArrow.style.display = "inline";

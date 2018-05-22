@@ -4,9 +4,9 @@ const restartGameBut = restartGame[0];
 const closeGameBut = restartGame[1];
 const mainSector = document.body.querySelector(".main_content");
 const curTime = document.body.querySelector(".watch");
-startGameBut.addEventListener("click", GameStartHandler);
-restartGameBut.addEventListener("click", Redirect);
-closeGameBut.addEventListener("click", Redirect);
+startGameBut.addEventListener("click", gameStartHandler);
+restartGameBut.addEventListener("click", redirect);
+closeGameBut.addEventListener("click", redirect);
 
 const select = document.body.querySelector('.complexity select');
 const sessionCompIndex = sessionStorage.getItem("complexityIndex");
@@ -20,7 +20,7 @@ if (sessionFrontCardIndex) {
     rad[+sessionFrontCardIndex].checked = "checked";
 }
 
-function ChosenNumFrontCard(img) {
+function chosenNumFrontCard(img) {
     let rad = [...document.getElementsByName('frontCards')];
     rad.forEach((el, ind) => {
         if (el.checked) {
@@ -29,7 +29,7 @@ function ChosenNumFrontCard(img) {
         }
     });
 }
-function ChosenComplexity() {
+function chosenComplexity() {
     const select = document.body.querySelector('.complexity select');
     const indexSelected = select.selectedIndex;
     const option = select.querySelectorAll('option')[indexSelected];
@@ -37,38 +37,38 @@ function ChosenComplexity() {
     sessionStorage.setItem('complexityIndex', indexSelected);
     return complexity;
 }
-function RandomInteger(array, min, max) {
+function randomInteger(array, min, max) {
     let value = min + Math.random() * (max + 1 - min);
     value = Math.floor(value);
-    if (Find(array, value)) {
-        return RandomInteger(array, min, max);
+    if (find(array, value)) {
+        return randomInteger(array, min, max);
     }
     return value;
 }
-function Find(array, value) {
+function find(array, value) {
     if (array.indexOf(value) === -1) {
         return;
     }
     return true;
 }
-function CompareRandom(a, b) {
+function compareRandom(a, b) {
     return Math.random() - 0.5;
 }
-function AssemleArray() {
+function assemleArray() {
     let cardsArray = [];
-    const complexity = ChosenComplexity();
+    const complexity = chosenComplexity();
     for (let i = 0; i < complexity / 2; i++) {
-        let randomValue = RandomInteger(cardsArray, 1, 20);
+        let randomValue = randomInteger(cardsArray, 1, 20);
         cardsArray.push(randomValue);
         cardsArray.push(randomValue);
     }
-    cardsArray.sort(CompareRandom);
+    cardsArray.sort(compareRandom);
     return cardsArray;
 }
-function FixLookTimer(time) {
+function fixLookTimer(time) {
     return (time + "").length < 2 ? "0" + time : time;
 }
-function StartGameTime() {
+function startGameTime() {
 
     let timer;
     return function (isStart) {
@@ -77,7 +77,7 @@ function StartGameTime() {
             let minutes = 0;
             let seconds = 1;
             timer = setInterval(() => {
-                curTime.textContent = `${FixLookTimer(hours)}:${FixLookTimer(minutes)}:${FixLookTimer(seconds)}`;
+                curTime.textContent = `${fixLookTimer(hours)}:${fixLookTimer(minutes)}:${fixLookTimer(seconds)}`;
                 seconds++;
                 if (seconds === 60) {
                     minutes++;
@@ -93,27 +93,27 @@ function StartGameTime() {
         }
     }
 }
-let StartGameTimeClosure;
+let startGameTimeClosure;
 let doingAfterCompareClosure;
-function Redirect() {
+function redirect() {
     location.reload();
 }
-function GameStartHandler() {
+function gameStartHandler() {
     closeGameBut.style.display = "block";
-    StartGameTimeClosure = StartGameTime();
-    StartGameTimeClosure(true);
+    startGameTimeClosure = startGameTime();
+    startGameTimeClosure(true);
     startGameBut.style.display = "none";
-    const cardsArray = AssemleArray();
+    const cardsArray = assemleArray();
     cardsArray.forEach(el => {
         const containerCard = document.createElement("div");
         containerCard.dataset.index = el;
         const contentCard = document.createElement("div");
         contentCard.classList.add("contentCard");
         containerCard.classList.add("containerCard");
-        containerCard.addEventListener("click", RotateHandler);
+        containerCard.addEventListener("click", rotateHandler);
         containerCard.appendChild(contentCard);
         const imgfront = document.createElement("img");
-        ChosenNumFrontCard(imgfront);
+        chosenNumFrontCard(imgfront);
         imgfront.classList.add("stylesCard");
         containerCard.appendChild(imgfront);
         const imgback = document.createElement("img");
@@ -126,7 +126,7 @@ function GameStartHandler() {
 
 }
 let arrayOfOpeningCards = [];
-function GetTimeInSeconds(time) {
+function getTimeInSeconds(time) {
     let arr = time.split(":");
     let result = 0;
     result += +arr[0] * 3600;
@@ -134,11 +134,11 @@ function GetTimeInSeconds(time) {
     result += +arr[2];
     return result;
 }
-function SetLocalStorage(record, obj) {
+function setLocalStorage(record, obj) {
     const prevValue = localStorage.getItem(record);
     if (prevValue) {
-        const prevTimeS = GetTimeInSeconds(JSON.parse(prevValue).time);
-        const curTimeS = GetTimeInSeconds(obj.time);
+        const prevTimeS = getTimeInSeconds(JSON.parse(prevValue).time);
+        const curTimeS = getTimeInSeconds(obj.time);
         if (curTimeS < prevTimeS) {
             obj.name = prompt("Поздравляем! Вы установили новый рекорд по времени на этой сложности!\n Введите своё имя");
             localStorage.setItem(record, JSON.stringify(obj));
@@ -151,12 +151,12 @@ function SetLocalStorage(record, obj) {
 }
 function doingAfterCompare() {
     let currOpenedCards = 0;
-    const complexity = ChosenComplexity();
+    const complexity = chosenComplexity();
     return function (isTheSame) {
         if (isTheSame) {
             currOpenedCards++;
             if (currOpenedCards === complexity / 2) {
-                StartGameTimeClosure(false);
+                startGameTimeClosure(false);
                 let obj = {
                     complexity: complexity,
                     time: curTime.textContent,
@@ -164,15 +164,15 @@ function doingAfterCompare() {
                 }
                 switch (complexity) {
                     case 10: {
-                        SetLocalStorage('recordEasy', obj)
+                        setLocalStorage('recordEasy', obj)
                         break;
                     }
                     case 20: {
-                        SetLocalStorage("recordMedium", obj)
+                        setLocalStorage("recordMedium", obj)
                         break;
                     }
                     case 40: {
-                        SetLocalStorage("recordHard", obj)
+                        setLocalStorage("recordHard", obj)
                         break;
                     }
                 }
@@ -194,7 +194,7 @@ function doingAfterCompare() {
     }
 }
 
-function RotateHandler(event) {
+function rotateHandler(event) {
     const rotatedContainer = event.target.closest(".containerCard");
     rotatedContainer.style.transform = "rotateY(180deg)";
 
