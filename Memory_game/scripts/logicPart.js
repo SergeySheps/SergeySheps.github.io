@@ -98,6 +98,9 @@ let doingAfterCompareClosure;
 function redirect() {
     location.reload();
 }
+const field = document.body.querySelector(".main_content");
+field.addEventListener("mousedown",rotateHandler);
+
 function gameStartHandler() {
     closeGameBut.style.display = "block";
     startGameTimeClosure = startGameTime();
@@ -110,7 +113,6 @@ function gameStartHandler() {
         const contentCard = document.createElement("div");
         contentCard.classList.add("contentCard");
         containerCard.classList.add("containerCard");
-        containerCard.addEventListener("click", rotateHandler);
         containerCard.appendChild(contentCard);
         const imgfront = document.createElement("img");
         chosenNumFrontCard(imgfront);
@@ -195,6 +197,10 @@ function doingAfterCompare() {
 }
 
 function rotateHandler(event) {
+    const target = event.target;
+    if (!target.classList.contains("stylesCard")){
+        return;
+    }
     const rotatedContainer = event.target.closest(".containerCard");
     rotatedContainer.style.transform = "rotateY(180deg)";
 
@@ -206,6 +212,7 @@ function rotateHandler(event) {
     if (arrayOfOpeningCards.length === 2) {
         doingAfterCompareClosure(checkSameCards(rotatedContainer));
     }
+    event.preventDefault();
 }
 function checkSameCards(containerCard) {
     return arrayOfOpeningCards[0].lastIndex === +containerCard.dataset.index;
