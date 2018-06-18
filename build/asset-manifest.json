@@ -1,7 +1,7 @@
 {
-  "main.css": "static/css/main.dddcd607.css",
-  "main.css.map": "static/css/main.dddcd607.css.map",
-  "main.js": "static/js/main.d9df777f.js",
-  "main.js.map": "static/js/main.d9df777f.js.map",
-  "static\\media\\loading.jpg": "static/media/loading.11b732ac.jpg"
+  "main.css": "/build/static/css/main.dddcd607.css",
+  "main.css.map": "/build/static/css/main.dddcd607.css.map",
+  "main.js": "/build/static/js/main.d9df777f.js",
+  "main.js.map": "/build/static/js/main.d9df777f.js.map",
+  "static\\media\\loading.jpg": "/build/static/media/loading.11b732ac.jpg"
 }
