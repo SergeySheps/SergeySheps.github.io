@@ -1,0 +1,205 @@
+@import "mixins.less";
+@shadow-width: 9px; 
+main{
+    background: #f0f0f0;
+}
+.features{
+    display: flex;
+    flex-flow: row wrap;
+    max-width: @width_viewScreen;
+    margin: auto;
+    background: @backGr-color_newsCard;
+    box-shadow: 7px 21px 44px -31px rgba(0,0,0,0.75);
+    border-radius: 0px 0px 5px 5px;
+    margin-bottom: 60px;
+}
+.features_item{
+    position: relative;
+    flex: 150px 1 1;
+    
+}
+.features__container{
+    margin: @features_container-margin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    text-align: center;
+    &_mainText{
+        .mainFont();
+        font-size: 17px;
+        color: @gray_color-upperCase;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    &_sideText{
+        .OxygenFont();
+    }
+}
+.shadow {
+    background-image: url("../images/shadow.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: calc(100% - @shadow-width);
+    width: @shadow-width;
+    background-size: 100% 100%;
+    height: 100%;
+}
+.shadow-last{
+    display: none;
+}
+
+.main__content{
+    display: flex;
+    max-width: @width_viewScreen;
+    margin: auto;
+    flex-flow: row wrap;
+    &_item{
+        display:flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        margin-right: 30px;
+        flex: 230px 1 1;
+        order: 2;
+    }
+}
+.newsCard{
+    background: @backGr-color_newsCard;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    max-width: 270px;
+}
+.newsCard__header{
+    .mainFont();
+    font-size: 17px;
+    font-weight: bold;
+    color: @gray_color-upperCase;
+    text-align: left;
+    padding: 30px 20px 0 20px;
+    min-width: 230px;
+}
+.newsCard__image{
+    margin: 30px 12px;
+}
+.newsCard__article{
+    color: @gray_color-lowerCase;
+    margin: 0px 20px 35px;
+    min-width: 230px;
+}
+.newsCard__button{
+    align-self: stretch;
+    .MyriadProFont();
+    color: rgb(255, 255, 255);
+    background: @pink_color;
+    text-transform: uppercase;
+    line-height: 1.846;
+    border: none;
+    padding: 20px;
+    text-align: left;
+    &::after{
+        content: url('../images/miniArrow-right.png');
+        margin-left: 10px;
+    }
+    &:hover{
+        cursor: pointer;
+    }
+}
+.newNavigationBlock{
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    background: @backGr-color_newsCard; 
+    &__content{
+        margin: 25px 20px;
+    }
+    &__header{
+        .mainFont();
+        color: @gray_color-upperCase;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+}
+
+.navigationList li{
+    &::before{
+        content: url('../images/list-style.png');
+        padding: 12px;
+    }
+    &:hover{
+        cursor: pointer;
+        background: #f0f0f0;
+    }
+    border-bottom: 1px solid #f0f0f0;
+    &:last-child{
+        border-bottom: none;
+    }   
+}
+.navigationList{
+    list-style: none;
+    padding: 0;  
+    .MyriadProFont();
+    color: @gray_color-lowerCase;
+    line-height: 2.769;
+    text-align: left;
+
+}
+.searchBlock{
+    &__content{
+        margin: 25px 20px;
+
+    }
+    &__header{
+        .mainFont();
+        color: @gray_color-upperCase;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    &__search{
+        height: 30px;
+        background: #f0f0f0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        border-radius: 5px;
+    }
+    &__search_image{
+        padding: 10px;
+    }
+}
+.main__content_item-last{
+    margin: 0;
+}
+.nav__item{
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+    margin-bottom: 20px;
+    &_container{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    &_image{
+        margin: 0 18px 18px 0;
+        background: @pink_color;
+        border-radius: 5px;
+        padding: 18px;
+    }
+    &_header{
+        color: @pink_color;
+        .MyriadProFont();
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    &_content{
+        .OxygenFont();
+    }
+    &:hover{
+        cursor: pointer;
+    }
+}
+        
+

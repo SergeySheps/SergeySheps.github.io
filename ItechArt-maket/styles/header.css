@@ -1,0 +1,190 @@
+.mainFont {
+  font-family: "FjallaOne";
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+}
+.arrow {
+  position: absolute;
+}
+.arrow:hover {
+  cursor: pointer;
+}
+.MyriadProFont {
+  font-size: 13px;
+  font-family: "Myriad Pro";
+}
+.OxygenFont {
+  font-family: "Oxygen";
+  font-size: 13px;
+  color: #979797;
+  text-decoration: underline;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.header__slaider_leftArrow {
+  position: absolute;
+  left: 20px;
+}
+.header__slaider_leftArrow:hover {
+  cursor: pointer;
+}
+.header__slaider_rightArrow {
+  position: absolute;
+  right: 20px;
+}
+.header__slaider_rightArrow:hover {
+  cursor: pointer;
+}
+header {
+  width: 100%;
+  background: url(../images/topbg.jpg);
+  background-size: 100% 100%;
+  position: relative;
+  margin: 0;
+  padding-top: 70px;
+}
+menu {
+  width: 100%;
+  background: #383838;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "FjallaOne";
+  box-sizing: border-box;
+  margin-bottom: 60px;
+}
+.menu__container {
+  max-width: 1170px;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  align-content: center;
+}
+.menu__rightside {
+  position: relative;
+}
+.menu__rightside_MainMenu {
+  display: flex;
+  align-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+.menu__rightside_MainMenu li {
+  display: inline-block;
+  font-size: 14px;
+  vertical-align: middle;
+  padding: 23px 25px;
+  font-weight: bold;
+  border-right: 2px solid #292929;
+}
+.menu__rightside_MainMenu li:hover {
+  background: #2a2a2a;
+  cursor: pointer;
+  color: #b297c4;
+}
+.menu__pop-up,
+.menu__pop-up-open {
+  display: none;
+}
+.menu__pop-up-open {
+  position: absolute;
+  left: -270px;
+  background: #292929;
+  border-radius: 6px;
+  z-index: 3;
+}
+.menu__pop-up-open ul {
+  padding: 40px;
+}
+.menu__pop-up-open li {
+  list-style: none;
+  font-size: 13px;
+  font-family: "Myriad Pro";
+  font-size: 30px;
+  padding: 15px;
+}
+.menu__pop-up-open li:hover {
+  cursor: pointer;
+  background: #383838;
+  color: #b297c4;
+}
+.visibleDisplay {
+  display: block;
+}
+.menu__logo {
+  margin-right: auto;
+  font-size: 38px;
+  background: #b297c4;
+  border-radius: 5px;
+  position: absolute;
+  top: -11px;
+  left: 0;
+  padding: 20px 25px;
+}
+.header__slaider {
+  max-width: 1170px;
+  margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__slaider_image-person {
+  width: 80px;
+  height: 90px;
+}
+.header__slaider-image {
+  border: 20px solid white;
+  border-radius: 5px 5px 0px 0px;
+  border-bottom: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.header__slaider-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.header__slaider-container-item {
+  margin: 14px;
+}
+.header__slaider-mainText {
+  font-size: 64px;
+  font-family: "FjallaOne";
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+}
+.header__slaider-sideText {
+  font-size: 22px;
+  font-family: "FjallaOne";
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+}
+.header__slaider-button {
+  font-size: 18px;
+  font-family: "FjallaOne";
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  background: transparent;
+  border: 3px solid rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  padding: 10px 12px;
+}
+.header__slaider-button:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,158 @@
+@import "mixins.less";
+@Width-1: 1024px;
+@Width-2: 768px;
+@Width-3: 412px;
+@media only screen and (max-width: 1176px), only screen and (max-device-width: 1176px){
+    .main__content_item-last{
+        order: 1;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+}
+@media only screen and (max-width: @Width-1), only screen and (max-device-width: @Width-1){
+    @font-size_correction: 1.5;
+    .header__slaider{
+        &-mainText{
+            font-size: @HeaderMainText-size/ @font-size_correction;
+        }
+        &-sideText{
+            font-size: @HeaderSideText-size / @font-size_correction;
+        }
+        &-button{
+            font-size: @HeaderButtonText-size / @font-size_correction;
+        }
+        &_image-person{
+            height: @header__image-person_height / @font-size_correction;
+            width: @header__image-person_width / @font-size_correction;
+        }
+        &-container-item{
+            margin: 8px;
+        }
+    }
+    .menu__rightside_MainMenu li{
+        padding: 18px 20px;
+        font-size: 13px;
+    }
+    .menu__logo{
+        font-size: 33px;
+        padding: 15px 20px;
+        top: -6px;
+    }
+    
+}
+@media only screen and (max-width: 910px), only screen and (max-device-width: 910px){
+    @font-size_correction:1.6;
+    .features__container{
+        margin: 30px/@font-size_correction 70px/@font-size_correction 40px/@font-size_correction 65px/@font-size_correction
+    }
+}
+
+@media only screen and (max-width: @Width-2), only screen and (max-device-width: @Width-2){
+    @font-size_correction: 1.8;
+    .header__slaider{
+        &-mainText{
+            font-size: @HeaderMainText-size/ @font-size_correction;
+        }
+        &-sideText{
+            font-size: @HeaderSideText-size / @font-size_correction;
+        }
+        &-button{
+            font-size: @HeaderButtonText-size / @font-size_correction;
+        }
+        &_image-person{
+            height: @header__image-person_height / @font-size_correction;
+            width: @header__image-person_width / @font-size_correction;
+        }
+    }
+    .features__container{
+        margin: 30px/@font-size_correction 70px/@font-size_correction 40px/@font-size_correction 65px/@font-size_correction
+    }
+    .menu__rightside_MainMenu li{
+        padding: 13px 15px;
+        font-size: 12px;
+    }
+    .menu__logo{
+        font-size: 28px;
+        padding: 10px 15px;
+        top: -5px;
+    } 
+    header{
+        padding-top: 30px;
+    } 
+    menu{
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 630px), only screen and (max-device-width: 630px){
+    @font-size_correction: 2.1;
+    @padding-size_correction: 1;
+    .header__slaider{
+        &-mainText{
+            font-size: @HeaderMainText-size/ @font-size_correction;
+        }
+        &-sideText{
+            font-size: @HeaderSideText-size / @font-size_correction;
+        }
+        &-button{
+            font-size: @HeaderButtonText-size / @font-size_correction;
+        }
+        &_image-person{
+            height: @header__image-person_height / @font-size_correction;
+            width: @header__image-person_width / @font-size_correction;
+        }
+        &-container-item{
+            margin: 6px;
+        }
+    }
+    .menu__rightside_MainMenu li{
+        padding: 10px + @padding-size_correction 12px + @padding-size_correction;
+        font-size: 10px + @padding-size_correction;
+    }
+    .menu__logo{
+        font-size: 24px + @padding-size_correction;
+        padding: 6px + @padding-size_correction 11px + @padding-size_correction;
+        top: -2px - @padding-size_correction;
+    } 
+
+}
+@media only screen and (max-width: 565px), only screen and (max-device-width: 565px){
+    @padding-size_correction: 8px;
+
+    header{
+        padding-bottom: 20px;
+    }
+    .menu__logo{
+        font-size: 24px + @padding-size_correction;
+        padding: 6px + @padding-size_correction 11px + @padding-size_correction;
+        top: -2px;
+    } 
+    .menu__pop-up{
+        display: block;
+        padding: 14px 20px;
+        background-color: #202529;
+        font-size: 20px + @padding-size_correction;
+        font-weight: bold;
+        &:hover{
+            cursor: pointer;
+            color: @pink_color;
+        }
+    }
+    .menu__rightside_MainMenu{
+        display: none;
+    }
+    .header__slaider{
+        display: none;
+    }
+    .funcFromSlider{
+        color: red;
+        font-size: 20px;
+    }
+    
+
+}
+@media only screen and (max-width: 485px), only screen and (max-device-width: 485px){
+    .shadow-last{
+        display: block;
+    }
+}

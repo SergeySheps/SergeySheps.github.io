@@ -1,0 +1,158 @@
+.mainFont {
+  font-family: "FjallaOne";
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+}
+.arrow {
+  position: absolute;
+}
+.arrow:hover {
+  cursor: pointer;
+}
+.MyriadProFont {
+  font-size: 13px;
+  font-family: "Myriad Pro";
+}
+.OxygenFont {
+  font-family: "Oxygen";
+  font-size: 13px;
+  color: #979797;
+  text-decoration: underline;
+}
+@media only screen and (max-width: 1176px), only screen and (max-device-width: 1176px) {
+  .main__content_item-last {
+    order: 1;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+}
+@media only screen and (max-width: 1024px), only screen and (max-device-width: 1024px) {
+  .header__slaider-mainText {
+    font-size: 42.66666667px;
+  }
+  .header__slaider-sideText {
+    font-size: 14.66666667px;
+  }
+  .header__slaider-button {
+    font-size: 12px;
+  }
+  .header__slaider_image-person {
+    height: 60px;
+    width: 53.33333333px;
+  }
+  .header__slaider-container-item {
+    margin: 8px;
+  }
+  .menu__rightside_MainMenu li {
+    padding: 18px 20px;
+    font-size: 13px;
+  }
+  .menu__logo {
+    font-size: 33px;
+    padding: 15px 20px;
+    top: -6px;
+  }
+}
+@media only screen and (max-width: 910px), only screen and (max-device-width: 910px) {
+  .features__container {
+    margin: 18.75px 43.75px 25px 40.625px;
+  }
+}
+@media only screen and (max-width: 768px), only screen and (max-device-width: 768px) {
+  .header__slaider-mainText {
+    font-size: 35.55555556px;
+  }
+  .header__slaider-sideText {
+    font-size: 12.22222222px;
+  }
+  .header__slaider-button {
+    font-size: 10px;
+  }
+  .header__slaider_image-person {
+    height: 50px;
+    width: 44.44444444px;
+  }
+  .features__container {
+    margin: 16.66666667px 38.88888889px 22.22222222px 36.11111111px;
+  }
+  .menu__rightside_MainMenu li {
+    padding: 13px 15px;
+    font-size: 12px;
+  }
+  .menu__logo {
+    font-size: 28px;
+    padding: 10px 15px;
+    top: -5px;
+  }
+  header {
+    padding-top: 30px;
+  }
+  menu {
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 630px), only screen and (max-device-width: 630px) {
+  .header__slaider-mainText {
+    font-size: 30.47619048px;
+  }
+  .header__slaider-sideText {
+    font-size: 10.47619048px;
+  }
+  .header__slaider-button {
+    font-size: 8.57142857px;
+  }
+  .header__slaider_image-person {
+    height: 42.85714286px;
+    width: 38.0952381px;
+  }
+  .header__slaider-container-item {
+    margin: 6px;
+  }
+  .menu__rightside_MainMenu li {
+    padding: 11px 13px;
+    font-size: 11px;
+  }
+  .menu__logo {
+    font-size: 25px;
+    padding: 7px 12px;
+    top: -3px;
+  }
+}
+@media only screen and (max-width: 565px), only screen and (max-device-width: 565px) {
+  header {
+    padding-bottom: 20px;
+  }
+  .menu__logo {
+    font-size: 32px;
+    padding: 14px 19px;
+    top: -2px;
+  }
+  .menu__pop-up {
+    display: block;
+    padding: 14px 20px;
+    background-color: #202529;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .menu__pop-up:hover {
+    cursor: pointer;
+    color: #b297c4;
+  }
+  .menu__rightside_MainMenu {
+    display: none;
+  }
+  .header__slaider {
+    display: none;
+  }
+  .funcFromSlider {
+    color: red;
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 485px), only screen and (max-device-width: 485px) {
+  .shadow-last {
+    display: block;
+  }
+}
