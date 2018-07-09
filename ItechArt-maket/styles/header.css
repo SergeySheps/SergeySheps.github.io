@@ -7,6 +7,8 @@
 }
 .arrow {
   position: absolute;
+  align-self: center;
+  margin-top: 8px;
 }
 .arrow:hover {
   cursor: pointer;
@@ -27,6 +29,8 @@ body {
 }
 .header__slaider_leftArrow {
   position: absolute;
+  align-self: center;
+  margin-top: 8px;
   left: 20px;
 }
 .header__slaider_leftArrow:hover {
@@ -34,6 +38,8 @@ body {
 }
 .header__slaider_rightArrow {
   position: absolute;
+  align-self: center;
+  margin-top: 8px;
   right: 20px;
 }
 .header__slaider_rightArrow:hover {
@@ -48,12 +54,16 @@ header {
   padding-top: 70px;
 }
 menu {
+  margin: 0;
+  padding: 0;
   width: 100%;
   background: #383838;
-  color: #ffffff;
-  text-transform: uppercase;
   font-family: "FjallaOne";
-  box-sizing: border-box;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  color: #ffffff;
   margin-bottom: 60px;
 }
 .menu__container {
@@ -78,10 +88,15 @@ menu {
 .menu__rightside_MainMenu li {
   display: inline-block;
   font-size: 14px;
+  font-family: "FjallaOne";
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  color: #ffffff;
   vertical-align: middle;
-  padding: 23px 25px;
-  font-weight: bold;
-  border-right: 2px solid #292929;
+  padding: 22px 18px;
+  border-right: 1px solid #292929;
 }
 .menu__rightside_MainMenu li:hover {
   background: #2a2a2a;
@@ -119,13 +134,19 @@ menu {
 }
 .menu__logo {
   margin-right: auto;
-  font-size: 38px;
+  font-family: "FjallaOne";
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  color: #ffffff;
+  font-size: 44px;
   background: #b297c4;
   border-radius: 5px;
   position: absolute;
-  top: -11px;
+  top: -12px;
   left: 0;
-  padding: 20px 25px;
+  padding: 19px 23px 12px;
 }
 .header__slaider {
   max-width: 1170px;
@@ -133,11 +154,6 @@ menu {
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
-}
-.header__slaider_image-person {
-  width: 80px;
-  height: 90px;
 }
 .header__slaider-image {
   border: 20px solid white;
@@ -154,11 +170,15 @@ menu {
   flex-flow: column nowrap;
   align-items: center;
 }
-.header__slaider-container-item {
-  margin: 14px;
+.header__slaider_image-person {
+  margin-top: 87px;
+  margin-bottom: 20px;
+  width: 80px;
+  height: 90px;
 }
 .header__slaider-mainText {
   font-size: 64px;
+  margin-bottom: 9px;
   font-family: "FjallaOne";
   color: rgba(255, 255, 255, 0.6);
   text-transform: uppercase;
@@ -166,12 +186,11 @@ menu {
   text-align: center;
 }
 .header__slaider-sideText {
+  font-size: 13px;
+  font-family: "Myriad Pro";
   font-size: 22px;
-  font-family: "FjallaOne";
   color: rgba(255, 255, 255, 0.6);
-  text-transform: uppercase;
-  line-height: 1.2;
-  text-align: center;
+  margin-bottom: 12px;
 }
 .header__slaider-button {
   font-size: 18px;
@@ -183,7 +202,7 @@ menu {
   background: transparent;
   border: 3px solid rgba(255, 255, 255, 0.6);
   border-radius: 5px;
-  padding: 10px 12px;
+  padding: 8px 10px;
 }
 .header__slaider-button:hover {
   cursor: pointer;

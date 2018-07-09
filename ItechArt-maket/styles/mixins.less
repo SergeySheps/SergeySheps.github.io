@@ -5,7 +5,7 @@
 @HeaderButtonText-size: @HeaderMainText-size - 46px;
 @header__image-person_width: 80px;
 @header__image-person_height: @header__image-person_width + 10px;
-@features_container-margin: 30px 70px 40px 65px;
+@features_container-margin: 30px 0px 35px 0px;
 @menu_textTransform :uppercase;
 @pink_color:#b297c4;
 @gray_color-upperCase:#747474;
@@ -15,11 +15,13 @@
     font-family: "FjallaOne";
     color: @loadingTextColor;
     text-transform: uppercase;
-    line-height: 1.2;
+    line-height: 1.4;
     text-align: center;
 }
 .arrow{
     position: absolute;
+    align-self: center;
+    margin-top: 8px;
     &:hover{
         cursor: pointer;
     }

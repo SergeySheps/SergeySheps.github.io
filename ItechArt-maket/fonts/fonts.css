@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'FjallaOne';
+    src: url(FjallaOne-Regular.ttf) format("opentype"); 
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url(MyriadPro-Regular.otf) format("opentype"); 
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Oxygen';
+    src: url(Oxygen-Regular.ttf) format("opentype"); 
+    font-style: normal;
+}

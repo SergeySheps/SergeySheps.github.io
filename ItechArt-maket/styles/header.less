@@ -20,15 +20,16 @@ header{
     position: relative;
     margin: 0;
     padding-top: 70px;
+    
 }
 menu{
+    margin: 0; 
+    padding: 0;
     width: 100%;
     background: #383838;
-    color: @backGr-color_newsCard;
-    text-transform: @menu_textTransform;
-    font-family: "FjallaOne";
-    box-sizing: border-box;
-    margin-bottom: 60px;
+    .mainFont();
+    color: @backGr-color_newsCard;     
+    margin-bottom: 60px;  
     
 }
 .menu__container{
@@ -52,10 +53,11 @@ menu{
     &_MainMenu li{
         display: inline-block;
         font-size: 14px;
+        .mainFont();
+        color: @backGr-color_newsCard;
         vertical-align: middle;
-        padding: 23px 25px;
-        font-weight: bold;
-        border-right: 2px solid #292929;
+        padding: 22px 18px;
+        border-right: 1px solid #292929;
         &:hover{
             background: #2a2a2a;
             cursor: pointer;
@@ -80,6 +82,7 @@ menu{
 .menu__pop-up-open li{
     list-style: none;
     .MyriadProFont();
+    
     font-size: 30px;
     padding: 15px;
     &:hover{
@@ -93,13 +96,15 @@ menu{
 }
 .menu__logo{
     margin-right: auto;
-    font-size: 38px;
+    .mainFont();
+    color: @backGr-color_newsCard; 
+    font-size: 44px;
     background: @pink_color;
     border-radius: 5px;
     position: absolute;
-    top: -11px;
+    top: -12px;
     left: 0;
-    padding: 20px 25px;
+    padding: 19px 23px 12px;
 }
 .header__slaider{
     max-width: @width_viewScreen;
@@ -107,12 +112,7 @@ menu{
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
 
-}
-.header__slaider_image-person{
-    width: @header__image-person_width;
-    height: @header__image-person_height;
 }
 .header__slaider-image{
     border: 20px solid white;
@@ -130,16 +130,23 @@ menu{
     flex-flow: column nowrap;
     align-items: center;
 }
-.header__slaider-container-item{
-    margin: 14px;
+
+.header__slaider_image-person{
+    margin-top: 87px;
+    margin-bottom: 20px;
+    width: @header__image-person_width;
+    height: @header__image-person_height;
 }
 .header__slaider-mainText{
     font-size: @HeaderMainText-size;
+    margin-bottom: 9px;
     .mainFont();
 }
 .header__slaider-sideText{
+    .MyriadProFont();
     font-size: @HeaderSideText-size;
-    .mainFont();
+    color: @loadingTextColor;  
+    margin-bottom: 12px; 
 }
 .header__slaider-button{
     font-size: @HeaderButtonText-size;
@@ -147,7 +154,7 @@ menu{
     background: transparent;
     border: 3px solid @loadingTextColor ;
     border-radius: 5px;
-    padding: 10px 12px;
+    padding: 8px 10px;
     &:hover{
         cursor: pointer;
     }

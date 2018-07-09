@@ -7,6 +7,8 @@
 }
 .arrow {
   position: absolute;
+  align-self: center;
+  margin-top: 8px;
 }
 .arrow:hover {
   cursor: pointer;
@@ -39,11 +41,9 @@
     font-size: 12px;
   }
   .header__slaider_image-person {
+    margin-top: 87px;
     height: 60px;
     width: 53.33333333px;
-  }
-  .header__slaider-container-item {
-    margin: 8px;
   }
   .menu__rightside_MainMenu li {
     padding: 18px 20px;
@@ -59,6 +59,11 @@
   .features__container {
     margin: 18.75px 43.75px 25px 40.625px;
   }
+  .header__slaider_image-person {
+    margin-top: 57px;
+    height: 56.25px;
+    width: 50px;
+  }
 }
 @media only screen and (max-width: 768px), only screen and (max-device-width: 768px) {
   .header__slaider-mainText {
@@ -71,6 +76,7 @@
     font-size: 10px;
   }
   .header__slaider_image-person {
+    margin-top: 47px;
     height: 50px;
     width: 44.44444444px;
   }
@@ -104,11 +110,9 @@
     font-size: 8.57142857px;
   }
   .header__slaider_image-person {
+    margin-top: 37px;
     height: 42.85714286px;
     width: 38.0952381px;
-  }
-  .header__slaider-container-item {
-    margin: 6px;
   }
   .menu__rightside_MainMenu li {
     padding: 11px 13px;

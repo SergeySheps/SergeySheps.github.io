@@ -4,6 +4,7 @@ footer{
     width: 100%;
     background: url(../images/topbg.jpg);
     background-size: 100% 100%;
+    font-size: 14px;
 }
 .footer__content{
     margin: auto;
@@ -15,28 +16,33 @@ footer{
 .footer__topPart{
     display: flex;
     border-bottom: 1px solid #f0f0f0;
-    padding: 50px 0 30px 0;
+    padding: 45px 0 30px 0;
     flex-flow: row wrap;
     &_item{
         color: @pink_color;
         flex: 200px 1 1;
-        padding: 20px;
+        padding: 0 40px 5px 0;
+        font-weight: bold;
         &_text{
             color: @gray_color-lowerCase;
+            font-weight: 100;
+            margin-top: 5px;
         }
     }
     
 }
 a{
     color: @gray_color-lowerCase;
+    text-decoration: none;
 }
 .footer__bottomPart{
     display: flex;
+    font-weight: bold;
     align-items: center;
     justify-content: flex-start;
     &_item{
         color: @pink_color;
-        margin: 40px 130px 65px 0;
+        margin: 40px 160px 65px 0;
     }
     &_socNetWork{
         list-style: none;
@@ -44,6 +50,9 @@ a{
     }
     &_socNetWork li{
         display: inline-block;
-        margin: 5px;
+        margin: 0 4px;
+    }
+    &_socNetWork li img{
+        display:block;
     }
 }
