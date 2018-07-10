@@ -18,15 +18,17 @@ footer{
     border-bottom: 1px solid #f0f0f0;
     padding: 45px 0 30px 0;
     flex-flow: row wrap;
-    &_item{
+    &-item{
         color: @pink_color;
         flex: 200px 1 1;
         padding: 0 40px 5px 0;
         font-weight: bold;
+        
         &_text{
             color: @gray_color-lowerCase;
             font-weight: 100;
             margin-top: 5px;
+            display: block;
         }
     }
     
@@ -34,25 +36,29 @@ footer{
 a{
     color: @gray_color-lowerCase;
     text-decoration: none;
+    
 }
 .footer__bottomPart{
     display: flex;
     font-weight: bold;
     align-items: center;
     justify-content: flex-start;
-    &_item{
+    &-item{
         color: @pink_color;
         margin: 40px 160px 65px 0;
     }
-    &_socNetWork{
+    & a{
+        color: @pink_color;
+    }
+    &-socNetWork{
         list-style: none;
         padding: 0;
     }
-    &_socNetWork li{
+    &-socNetWork li{
         display: inline-block;
         margin: 0 4px;
     }
-    &_socNetWork li img{
+    &-socNetWork li img{
         display:block;
     }
 }

@@ -9,6 +9,11 @@
   position: absolute;
   align-self: center;
   margin-top: 8px;
+  width: 32px;
+  height: 47px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: 3;
 }
 .arrow:hover {
   cursor: pointer;
@@ -42,16 +47,17 @@ footer {
   padding: 45px 0 30px 0;
   flex-flow: row wrap;
 }
-.footer__topPart_item {
+.footer__topPart-item {
   color: #b297c4;
   flex: 200px 1 1;
   padding: 0 40px 5px 0;
   font-weight: bold;
 }
-.footer__topPart_item_text {
+.footer__topPart-item_text {
   color: #979797;
   font-weight: 100;
   margin-top: 5px;
+  display: block;
 }
 a {
   color: #979797;
@@ -63,18 +69,21 @@ a {
   align-items: center;
   justify-content: flex-start;
 }
-.footer__bottomPart_item {
+.footer__bottomPart-item {
   color: #b297c4;
   margin: 40px 160px 65px 0;
 }
-.footer__bottomPart_socNetWork {
+.footer__bottomPart a {
+  color: #b297c4;
+}
+.footer__bottomPart-socNetWork {
   list-style: none;
   padding: 0;
 }
-.footer__bottomPart_socNetWork li {
+.footer__bottomPart-socNetWork li {
   display: inline-block;
   margin: 0 4px;
 }
-.footer__bottomPart_socNetWork li img {
+.footer__bottomPart-socNetWork li img {
   display: block;
 }

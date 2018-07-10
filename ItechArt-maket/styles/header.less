@@ -5,21 +5,14 @@ body{
     margin:0;
     padding: 0;
 }
-.header__slaider_leftArrow{
-    .arrow();
-    left: 20px;
-}
-.header__slaider_rightArrow{
-    .arrow();
-    right: 20px;
-}
+
 header{
     width: 100%;
     background: url(../images/topbg.jpg);
     background-size: 100% 100%;
     position: relative;
     margin: 0;
-    padding-top: 70px;
+    padding-top: 60px;
     
 }
 menu{
@@ -28,8 +21,7 @@ menu{
     width: 100%;
     background: #383838;
     .mainFont();
-    color: @backGr-color_newsCard;     
-    margin-bottom: 60px;  
+    color: @backGr-color_newsCard;      
     
 }
 .menu__container{
@@ -49,6 +41,7 @@ menu{
         padding:0;
         margin: 0;
         position: relative;
+        letter-spacing: 0.9px;
     }
     &_MainMenu li{
         display: inline-block;
@@ -56,7 +49,7 @@ menu{
         .mainFont();
         color: @backGr-color_newsCard;
         vertical-align: middle;
-        padding: 22px 18px;
+        padding: 21px 17px;
         border-right: 1px solid #292929;
         &:hover{
             background: #2a2a2a;
@@ -98,64 +91,13 @@ menu{
     margin-right: auto;
     .mainFont();
     color: @backGr-color_newsCard; 
-    font-size: 44px;
+    font-size: 42px;
     background: @pink_color;
     border-radius: 5px;
     position: absolute;
     top: -12px;
     left: 0;
-    padding: 19px 23px 12px;
-}
-.header__slaider{
-    max-width: @width_viewScreen;
-    margin: auto;
-    position: relative;
-    display: flex;
-    justify-content: center;
-
-}
-.header__slaider-image{
-    border: 20px solid white;
-    border-radius: 5px 5px 0px 0px;
-    border-bottom: 0;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    
-}
-.header__slaider-container{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    flex-flow: column nowrap;
-    align-items: center;
+    padding: 12px 23px 12px;
+    z-index: 3;
 }
 
-.header__slaider_image-person{
-    margin-top: 87px;
-    margin-bottom: 20px;
-    width: @header__image-person_width;
-    height: @header__image-person_height;
-}
-.header__slaider-mainText{
-    font-size: @HeaderMainText-size;
-    margin-bottom: 9px;
-    .mainFont();
-}
-.header__slaider-sideText{
-    .MyriadProFont();
-    font-size: @HeaderSideText-size;
-    color: @loadingTextColor;  
-    margin-bottom: 12px; 
-}
-.header__slaider-button{
-    font-size: @HeaderButtonText-size;
-    .mainFont();
-    background: transparent;
-    border: 3px solid @loadingTextColor ;
-    border-radius: 5px;
-    padding: 8px 10px;
-    &:hover{
-        cursor: pointer;
-    }
-}

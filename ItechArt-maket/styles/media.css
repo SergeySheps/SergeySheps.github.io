@@ -2,13 +2,18 @@
   font-family: "FjallaOne";
   color: rgba(255, 255, 255, 0.6);
   text-transform: uppercase;
-  line-height: 1.2;
+  line-height: 1.4;
   text-align: center;
 }
 .arrow {
   position: absolute;
   align-self: center;
   margin-top: 8px;
+  width: 32px;
+  height: 47px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: 3;
 }
 .arrow:hover {
   cursor: pointer;
@@ -24,23 +29,23 @@
   text-decoration: underline;
 }
 @media only screen and (max-width: 1176px), only screen and (max-device-width: 1176px) {
-  .main__content_item-last {
+  .main__content-column_last {
     order: 1;
     margin-right: 30px;
     margin-left: 30px;
   }
 }
 @media only screen and (max-width: 1024px), only screen and (max-device-width: 1024px) {
-  .header__slaider-mainText {
+  .banner__slider-mainText {
     font-size: 42.66666667px;
   }
-  .header__slaider-sideText {
+  .banner__slider-sideText {
     font-size: 14.66666667px;
   }
-  .header__slaider-button {
+  .banner__slider-button {
     font-size: 12px;
   }
-  .header__slaider_image-person {
+  .banner__slider_image-person {
     margin-top: 87px;
     height: 60px;
     width: 53.33333333px;
@@ -59,23 +64,23 @@
   .features__container {
     margin: 18.75px 43.75px 25px 40.625px;
   }
-  .header__slaider_image-person {
+  .banner__slider_image-person {
     margin-top: 57px;
     height: 56.25px;
     width: 50px;
   }
 }
 @media only screen and (max-width: 768px), only screen and (max-device-width: 768px) {
-  .header__slaider-mainText {
+  .banner__slider-mainText {
     font-size: 35.55555556px;
   }
-  .header__slaider-sideText {
+  .banner__slider-sideText {
     font-size: 12.22222222px;
   }
-  .header__slaider-button {
+  .banner__slider-button {
     font-size: 10px;
   }
-  .header__slaider_image-person {
+  .banner__slider_image-person {
     margin-top: 47px;
     height: 50px;
     width: 44.44444444px;
@@ -95,21 +100,18 @@
   header {
     padding-top: 30px;
   }
-  menu {
-    margin-bottom: 30px;
-  }
 }
 @media only screen and (max-width: 630px), only screen and (max-device-width: 630px) {
-  .header__slaider-mainText {
+  .banner__slider-mainText {
     font-size: 30.47619048px;
   }
-  .header__slaider-sideText {
+  .banner__slider-sideText {
     font-size: 10.47619048px;
   }
-  .header__slaider-button {
+  .banner__slider-button {
     font-size: 8.57142857px;
   }
-  .header__slaider_image-person {
+  .banner__slider_image-person {
     margin-top: 37px;
     height: 42.85714286px;
     width: 38.0952381px;
@@ -147,7 +149,7 @@
   .menu__rightside_MainMenu {
     display: none;
   }
-  .header__slaider {
+  .banner__slider {
     display: none;
   }
   .funcFromSlider {
@@ -156,7 +158,7 @@
   }
 }
 @media only screen and (max-width: 485px), only screen and (max-device-width: 485px) {
-  .shadow-last {
+  .shadow_last {
     display: block;
   }
 }

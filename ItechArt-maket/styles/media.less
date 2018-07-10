@@ -3,7 +3,7 @@
 @Width-2: 768px;
 @Width-3: 412px;
 @media only screen and (max-width: 1176px), only screen and (max-device-width: 1176px){
-    .main__content_item-last{
+    .main__content-column_last{
         order: 1;
         margin-right: 30px;
         margin-left: 30px;
@@ -11,7 +11,7 @@
 }
 @media only screen and (max-width: @Width-1), only screen and (max-device-width: @Width-1){
     @font-size_correction: 1.5;
-    .header__slaider{
+    .banner__slider{
         &-mainText{
             font-size: @HeaderMainText-size/ @font-size_correction;
         }
@@ -26,9 +26,7 @@
             height: @header__image-person_height / @font-size_correction;
             width: @header__image-person_width / @font-size_correction;
         }
-        // &-container-item{
-        //     margin: 8px;
-        // }
+
     }
     .menu__rightside_MainMenu li{
         padding: 18px 20px;
@@ -46,7 +44,7 @@
     .features__container{
         margin: 30px/@font-size_correction 70px/@font-size_correction 40px/@font-size_correction 65px/@font-size_correction
     }
-    .header__slaider_image-person{
+    .banner__slider_image-person{
         margin-top: 57px;
         height: @header__image-person_height / @font-size_correction;
         width: @header__image-person_width / @font-size_correction;
@@ -55,7 +53,7 @@
 
 @media only screen and (max-width: @Width-2), only screen and (max-device-width: @Width-2){
     @font-size_correction: 1.8;
-    .header__slaider{
+    .banner__slider{
         &-mainText{
             font-size: @HeaderMainText-size/ @font-size_correction;
         }
@@ -86,15 +84,13 @@
     header{
         padding-top: 30px;
     } 
-    menu{
-        margin-bottom: 30px;
-    }
+
 }
 
 @media only screen and (max-width: 630px), only screen and (max-device-width: 630px){
     @font-size_correction: 2.1;
     @padding-size_correction: 1;
-    .header__slaider{
+    .banner__slider{
         &-mainText{
             font-size: @HeaderMainText-size/ @font-size_correction;
         }
@@ -109,9 +105,6 @@
             height: @header__image-person_height / @font-size_correction;
             width: @header__image-person_width / @font-size_correction;
         }
-        // &-container-item{
-        //     margin: 6px;
-        // }
     }
     .menu__rightside_MainMenu li{
         padding: 10px + @padding-size_correction 12px + @padding-size_correction;
@@ -149,7 +142,7 @@
     .menu__rightside_MainMenu{
         display: none;
     }
-    .header__slaider{
+    .banner__slider{
         display: none;
     }
     .funcFromSlider{
@@ -160,7 +153,7 @@
 
 }
 @media only screen and (max-width: 485px), only screen and (max-device-width: 485px){
-    .shadow-last{
+    .shadow_last{
         display: block;
     }
 }

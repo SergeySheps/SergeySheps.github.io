@@ -1,63 +1,10 @@
 @import "mixins.less";
-@shadow-width: 9px; 
+
 main{
     background: #f0f0f0;
     
 }
-.features{
-    display: flex;
-    box-sizing: border-box;
-    flex-flow: row wrap;
-    max-width: @width_viewScreen;
-    margin: auto;
-    background: @backGr-color_newsCard;
-    box-shadow: 7px 10px 44px -31px rgba(0,0,0,0.75);
-    border-radius: 0px 0px 5px 5px;
-    margin-bottom: 55px;
-    &_item{
-        justify-content: center;
-        display: flex;
-        border-left: 20px solid white;
-        position: relative;
-        flex: 170px 1 1;
-    }
 
-}
-
-.features__container{
-    margin: @features_container-margin;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column nowrap;
-    text-align: center;
-    width: 100%;
-    max-width: 130px;
-    &_mainText{
-        .mainFont();
-        font-size: 17px;
-        color: @gray_color-upperCase;
-        margin-top: 20px;
-        margin-bottom: 2px;
-    }
-    &_sideText{
-        .OxygenFont();
-    }
-}
-
-.shadow {
-    background-image: url("../images/shadow.png");
-    background-repeat: no-repeat;
-    position: absolute;
-    // left: calc(100% - @shadow-width);
-    left: calc(100% + 20px);
-    width: @shadow-width;
-    background-size: 100% 100%;
-    height: 100%;
-}
-.shadow-last{
-    display: none;
-}
 
 .main__content{
     display: flex;
@@ -65,7 +12,7 @@ main{
     margin: auto;
     flex-flow: row wrap;
     padding-bottom: 25px;
-    &_item{
+    &-column{
         display:flex;
         flex-flow: column nowrap;
         align-items: center;
@@ -93,14 +40,15 @@ main{
         min-width: 230px;
     }
     &__image{
-        margin: 25px 12px;
+        margin: 22px 12px;
     }
     &__article{
         color: @gray_color-lowerCase;
-        margin: 0px 20px 35px;
+        margin: 0px 20px 28px;
         min-width: 230px;
         .OxygenFont();
         text-decoration:none;
+        line-height: 1.692;
     }
     &__button{
         align-self: stretch;
@@ -112,7 +60,7 @@ main{
         line-height: 1.846;
         border-radius: 0px 0px 6px 6px;
         border: none;
-        padding: 15px;
+        padding: 15px 20px;;
         text-align: left;
         &::after{
             content: url('../images/miniArrow-right.png');
@@ -193,7 +141,7 @@ main{
         padding: 10px;
     }
 }
-.main__content_item-last{
+.main__content-column-last{
     margin: 0;
 }
 .nav__item{

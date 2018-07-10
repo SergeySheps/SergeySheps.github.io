@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/media.css">
+    <link rel="stylesheet" href="styles/banner.css">
     <link rel="stylesheet" href="fonts/fonts.css">
-    
+    <link rel="stylesheet" href="styles/media.css">
+
     <title>Document</title>
 </head>
 
@@ -43,55 +44,60 @@
                 </nav>
             </div>
         </menu>
-        <div class="header__slaider">
-            <img src="images/arrow-left.png" alt="" class="header__slaider_leftArrow">
-            <img src="images/slaider_header_1.jpg" alt="" class="header__slaider-image ">
-            <div class="header__slaider-container">
-                <img src="images/perosn.png" alt="" class="header__slaider_image-person header__slaider-container-item">
-                <div class="header__slaider-mainText header__slaider-container-item">Nunc digno lorem dol</div>
-                <div class="header__slaider-sideText header__slaider-container-item">Vivamus vestibulum nulla</div>
-                <button class="header__slaider-button header__slaider-container-item">Loareet ipon</button>
-            </div>
-            <img src="images/arrow-right.png" alt="" class="header__slaider_rightArrow">
-        </div>
+
     </header>
     <main>
-        <div class="features">
-            <div class="features_item features_item-1">
-                <div class="shadow"></div>
-                <div class="features__container">
-                    <img src="images/headphones.png" alt="" class="features_image">
-                    <div class="features__container_mainText">ibus tortor</div>
-                    <div class="features__container_sideText">Morbi interdum mollis</div>
+        <div class="banner">
+            <div class="banner__slider-wrapper">
+                <div class="banner__slider">
+                    <a href="http://" class="banner__slider_leftArrow"></a>
+                    <div class="banner__slider-background "></div>
+                    <div class="banner__slider-container">
+                        <img src="images/perosn.png" alt="" class="banner__slider_image-person banner__slider-container-item">
+                        <div class="banner__slider-mainText banner__slider-container-item">Nunc digno lorem dol</div>
+                        <div class="banner__slider-sideText banner__slider-container-item">Vivamus vestibulum nulla</div>
+                        <button class="banner__slider-button banner__slider-container-item">Loareet ipon</button>
+                    </div>
+                    <a href="http://" class="banner__slider_rightArrow"></a>
                 </div>
             </div>
-            <div class="features_item features_item-2">
-                <div class="shadow"></div>
-                <div class="features__container">
-                    <img src="images/refresh.png" alt="" class="features_image">
-                    <div class="features__container_mainText">aliquam</div>
-                    <div class="features__container_sideText">Vestibulam dipbus</div>
+            <div class="features">
+                <div class="features_item">
+                    <div class="shadow"></div>
+                    <div class="features__container">
+                        <img src="images/headphones.png" alt="" class="features_image">
+                        <div class="features__container_mainText">ibus tortor</div>
+                        <div class="features__container_sideText">Morbi interdum mollis</div>
+                    </div>
                 </div>
-            </div>
-            <div class="features_item features_item-3">
-                <div class="shadow"></div>
-                <div class="features__container">
-                    <img src="images/clock.png" alt="" class="features_image">
-                    <div class="features__container_mainText">nunciden</div>
-                    <div class="features__container_sideText">Idot crasorma elinit</div>
+                <div class="features_item">
+                    <div class="shadow"></div>
+                    <div class="features__container">
+                        <img src="images/refresh.png" alt="" class="features_image">
+                        <div class="features__container_mainText">aliquam</div>
+                        <div class="features__container_sideText">Vestibulam dipbus</div>
+                    </div>
                 </div>
-            </div>
-            <div class="features_item features_item-4">
-                    <div class="shadow shadow-last"></div>
-                <div class="features__container">
-                    <img src="images/dialog.png" alt="" class="features_image">
-                    <div class="features__container_mainText">egestasmod</div>
-                    <div class="features__container_sideText">Felis moodo tortor</div>
+                <div class="features_item">
+                    <div class="shadow"></div>
+                    <div class="features__container">
+                        <img src="images/clock.png" alt="" class="features_image">
+                        <div class="features__container_mainText">nunciden</div>
+                        <div class="features__container_sideText">Idot crasorma elinit</div>
+                    </div>
+                </div>
+                <div class="features_item">
+                    <div class="shadow shadow_last"></div>
+                    <div class="features__container">
+                        <img src="images/dialog.png" alt="" class="features_image">
+                        <div class="features__container_mainText">egestasmod</div>
+                        <div class="features__container_sideText">Felis moodo tortor</div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="main__content">
-            <div class="main__content_item">
+            <div class="main__content-column">
                 <div class="newsCard">
                     <div class="newsCard__header">
                         Praesent dapibus lipsum neque id cursus faucio dolor ibus tortor neque tiinousegetas augue
@@ -117,7 +123,7 @@
                     </button>
                 </div>
             </div>
-            <div class="main__content_item">
+            <div class="main__content-column">
                 <div class="newsCard">
                     <div class="newsCard__header">
                         Integer vitae libero ac risus egestas risus egestas placerat
@@ -156,7 +162,7 @@
                     </button>
                 </div>
             </div>
-            <div class="main__content_item">
+            <div class="main__content-column">
                 <div class="newsCard">
                     <div class="newsCard__header">
                         Integer vitae libero ac risus egestas modo felis quis
@@ -184,7 +190,7 @@
                     </button>
                 </div>
             </div>
-            <div class="main__content_item main__content_item-last">
+            <div class="main__content-column main__content-column_last">
                 <div class="searchBlock newNavigationBlock">
                     <div class="searchBlock__content">
                         <div class="searchBlock__header">
@@ -228,7 +234,7 @@
                                 <div class="nav__item_container">
                                     <div class="nav__item_header">Vivamus </div>
                                     <div class="nav__item_content">Nulla nec praesent placerat risus..
-                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="nav__item">
@@ -236,7 +242,7 @@
                                 <div class="nav__item_container">
                                     <div class="nav__item_header">John</div>
                                     <div class="nav__item_content">Nulla nec praesent placerat risus..
-                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="nav__item">
@@ -257,28 +263,59 @@
     <footer>
         <div class="footer__content">
             <div class="footer__topPart">
-                <div class="footer__topPart_item">Copyright (c) 2013 
-                    <div class="footer__topPart_item_text">All rights reserved.</div></div>
-                <div class="footer__topPart_item">Designed by:
-                    <div class="footer__topPart_item_text">www.alltemplateneeds.com</div></div>
-                <div class="footer__topPart_item">Imags from:
-                    <div class="footer__topPart_item_text">wallcoo.net | wallpaperswide.com</div>
+                <div class="footer__topPart-item">Copyright (c) 2013
+                    <div class="footer__topPart-item_text">All rights reserved.</div>
                 </div>
-                <div class="footer__topPart_item">Contact
-                    <div> <a href="/">info@companyname.com</a></div>
+                <div class="footer__topPart-item">Designed by:
+                    <a href="http://alltemplateneeds.com/" target="_blank" class="footer__topPart-item_text">www.alltemplateneeds.com</a>
+                </div>
+                <div class="footer__topPart-item">Imags from:
+                    <div class="footer__topPart-item_text">
+                        <a href="http://wallcoo.net" target="_blank">wallcoo.net</a> |
+                        <a href="http://wallpaperswide.com" target="_blank">wallpaperswide.com</a>
+                    </div>
+                </div>
+                <div class="footer__topPart-item">Contact
+                    <a href="mailto:info@companyname.com" class="footer__topPart-item_text">info@companyname.com</a>
                 </div>
             </div>
             <div class="footer__bottomPart">
-                <ul class="footer__bottomPart_item footer__bottomPart_socNetWork">
-                    <li><img src="images/35.png" alt=""></li>
-                    <li><img src="images/34.png" alt=""></li>
-                    <li><img src="images/33.png" alt=""></li>
-                    <li><img src="images/32.png" alt=""></li>
-                    <li><img src="images/31.png" alt=""></li>
+                <ul class="footer__bottomPart-item footer__bottomPart-socNetWork">
+                    <li>
+                        <a href="/" class="footer__bottomPart-socNetWork_link">
+                            <img src="images/35.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="footer__bottomPart-socNetWork_link">
+                            <img src="images/34.png" alt="">
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="" class="footer__bottomPart-socNetWork_link">
+                            <img src="images/33.png" alt="">
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="" class="footer__bottomPart-socNetWork_link">
+                            <img src="images/32.png" alt="">
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="" class="footer__bottomPart-socNetWork_link">
+                            <img src="images/31.png" alt="">
+                        </a>
+
+                    </li>
                 </ul>
-                <div class="footer__bottomPart_item">
-                    Home :: About :: Contact
-                </div> 
+                <div class="footer__bottomPart-item">
+                    <a href="/">Home</a> :: 
+                    <a href="/">About</a> :: 
+                    <a href="/">Contact</a>
+                </div>
             </div>
         </div>
     </footer>
