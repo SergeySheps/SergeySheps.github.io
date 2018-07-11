@@ -71,19 +71,16 @@ a {
 }
 .footer__bottomPart-item {
   color: #b297c4;
-  margin: 40px 160px 65px 0;
+  margin: 40px 140px 65px 0;
 }
-.footer__bottomPart a {
+.footer__bottomPart-link {
   color: #b297c4;
 }
-.footer__bottomPart-socNetWork {
+.footer__bottomPart-socNetWorks {
   list-style: none;
   padding: 0;
 }
-.footer__bottomPart-socNetWork li {
+.footer__bottomPart-socNetWorks-item {
   display: inline-block;
   margin: 0 4px;
-}
-.footer__bottomPart-socNetWork li img {
-  display: block;
 }

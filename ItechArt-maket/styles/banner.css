@@ -135,7 +135,7 @@
   border-radius: 0px 0px 5px 5px;
   margin-bottom: 55px;
 }
-.features_item {
+.features__item {
   justify-content: center;
   display: flex;
   border-left: 20px solid white;
@@ -152,7 +152,7 @@
   width: 100%;
   max-width: 130px;
 }
-.features__container_mainText {
+.features__container-mainText {
   font-family: "FjallaOne";
   color: rgba(255, 255, 255, 0.6);
   text-transform: uppercase;
@@ -163,7 +163,7 @@
   margin-top: 20px;
   margin-bottom: 2px;
 }
-.features__container_sideText {
+.features__container-sideText {
   font-family: "Oxygen";
   font-size: 13px;
   color: #979797;

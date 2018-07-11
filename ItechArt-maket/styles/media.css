@@ -50,7 +50,7 @@
     height: 60px;
     width: 53.33333333px;
   }
-  .menu__rightside_MainMenu li {
+  .menu__rightside-mainMenu-item {
     padding: 18px 20px;
     font-size: 13px;
   }
@@ -88,7 +88,7 @@
   .features__container {
     margin: 16.66666667px 38.88888889px 22.22222222px 36.11111111px;
   }
-  .menu__rightside_MainMenu li {
+  .menu__rightside-mainMenu-item {
     padding: 13px 15px;
     font-size: 12px;
   }
@@ -116,7 +116,7 @@
     height: 42.85714286px;
     width: 38.0952381px;
   }
-  .menu__rightside_MainMenu li {
+  .menu__rightside-mainMenu-item {
     padding: 11px 13px;
     font-size: 11px;
   }
@@ -135,18 +135,18 @@
     padding: 14px 19px;
     top: -2px;
   }
-  .menu__pop-up {
+  .menu__pop-up_toggle {
     display: block;
     padding: 14px 20px;
     background-color: #202529;
     font-size: 28px;
     font-weight: bold;
   }
-  .menu__pop-up:hover {
+  .menu__pop-up_toggle:hover {
     cursor: pointer;
     color: #b297c4;
   }
-  .menu__rightside_MainMenu {
+  .menu__rightside-mainMenu {
     display: none;
   }
   .banner__slider {
@@ -154,7 +154,6 @@
   }
   .funcFromSlider {
     color: red;
-    font-size: 20px;
   }
 }
 @media only screen and (max-width: 485px), only screen and (max-device-width: 485px) {

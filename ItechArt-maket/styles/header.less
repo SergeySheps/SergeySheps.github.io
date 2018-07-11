@@ -34,7 +34,7 @@ menu{
 }
 .menu__rightside{
     position: relative;
-    &_MainMenu{
+    &-mainMenu{
         display: flex;
         align-content: center;
         list-style: none;
@@ -43,7 +43,7 @@ menu{
         position: relative;
         letter-spacing: 0.9px;
     }
-    &_MainMenu li{
+    &-mainMenu-item{
         display: inline-block;
         font-size: 14px;
         .mainFont();
@@ -59,20 +59,20 @@ menu{
     }
 }
 
-.menu__pop-up,.menu__pop-up-open{
+.menu__pop-up_toggle,.menu__pop-up-content{
     display: none;
 }
-.menu__pop-up-open{
+.menu__pop-up-content{
     position: absolute;
     left: -270px;
     background: #292929;
     border-radius: 6px;
     z-index: 3;
 }
-.menu__pop-up-open ul{
+.menu__pop-up-list{
     padding: 40px;
 }
-.menu__pop-up-open li{
+.menu__pop-up-list-item {
     list-style: none;
     .MyriadProFont();
     

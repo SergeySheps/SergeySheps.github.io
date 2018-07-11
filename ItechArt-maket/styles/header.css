@@ -63,7 +63,7 @@ menu {
 .menu__rightside {
   position: relative;
 }
-.menu__rightside_MainMenu {
+.menu__rightside-mainMenu {
   display: flex;
   align-content: center;
   list-style: none;
@@ -72,7 +72,7 @@ menu {
   position: relative;
   letter-spacing: 0.9px;
 }
-.menu__rightside_MainMenu li {
+.menu__rightside-mainMenu-item {
   display: inline-block;
   font-size: 14px;
   font-family: "FjallaOne";
@@ -85,33 +85,33 @@ menu {
   padding: 21px 17px;
   border-right: 1px solid #292929;
 }
-.menu__rightside_MainMenu li:hover {
+.menu__rightside-mainMenu-item:hover {
   background: #2a2a2a;
   cursor: pointer;
   color: #b297c4;
 }
-.menu__pop-up,
-.menu__pop-up-open {
+.menu__pop-up_toggle,
+.menu__pop-up-content {
   display: none;
 }
-.menu__pop-up-open {
+.menu__pop-up-content {
   position: absolute;
   left: -270px;
   background: #292929;
   border-radius: 6px;
   z-index: 3;
 }
-.menu__pop-up-open ul {
+.menu__pop-up-list {
   padding: 40px;
 }
-.menu__pop-up-open li {
+.menu__pop-up-list-item {
   list-style: none;
   font-size: 13px;
   font-family: "Myriad Pro";
   font-size: 30px;
   padding: 15px;
 }
-.menu__pop-up-open li:hover {
+.menu__pop-up-list-item:hover {
   cursor: pointer;
   background: #383838;
   color: #b297c4;
